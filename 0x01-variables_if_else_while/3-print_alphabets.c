@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
  * main - main block
- * Description: print the alphabet in lower case
- * and then in uppercase, follow by a new line
- * Return o
+ * Descripition: print the alphabet in lowercase
+ * and the in uppercase, follow by a new line.
+ * Return: o
  */
 int main(void)
 {
