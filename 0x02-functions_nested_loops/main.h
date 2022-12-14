@@ -1,5 +1,5 @@
-#ifindf MAIN_H
-#idefine MAIN_H
+#ifindef MAIN_H
+#define MAIN_H
 
 int _putchar(char c);
 void print_alphabet(void);
@@ -15,6 +15,6 @@ int add(int, int);
 void print_to_98(int n);
 void print_times_table(int n);
 
-main-print_putchar
+main = attribute - print_putchar
 
-#endif
+#end
