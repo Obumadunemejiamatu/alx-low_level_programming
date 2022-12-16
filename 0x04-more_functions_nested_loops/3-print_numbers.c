@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * print_number - print numbers
- * Return: Always 0
+ * print_numbers - print numbers
+ * Return: Always 0.
  */
 void print_numbers(void)
 {
@@ -16,5 +16,3 @@ i++;
 
 _putchar ('\n');
 }
-
-
