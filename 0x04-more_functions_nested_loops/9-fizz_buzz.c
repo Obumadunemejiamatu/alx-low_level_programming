@@ -10,6 +10,8 @@ int main(void)
 
 int p = 100;
 int i;
+
+i = l;
 while (i <= P)
 {
 if (i % 3 == 0 && i % 5 == 0)
