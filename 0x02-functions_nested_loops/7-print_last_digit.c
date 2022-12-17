@@ -10,7 +10,7 @@
 int print_last_digit(int n)
 
 {
-	int lasy_digit;
+	int last_digit;
 
 	if (n < 0)
 	{
