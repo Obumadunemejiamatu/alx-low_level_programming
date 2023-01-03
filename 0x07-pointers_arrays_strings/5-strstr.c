@@ -6,7 +6,6 @@
  * @needle: searched in haystack
  * Return: return o
  **/
-
 char *_strstr(char *haystack, char *needle)
 {
 	char str1, *str2; /*Declaring variable*/
