@@ -6,7 +6,7 @@
  * Return: evaluate sqrt
  */
 
-int _evaluate(int i, int n)
+int _sqrt_recursion(int n, int i);
 {
 	/*Evaluate function*/
 	if (n == 0 || n == 1)
@@ -17,8 +17,6 @@ int _evaluate(int i, int n)
 
 	else if (i * i == n) /*Condition base*/
 		return (i);
-
-	return (-1);
 
 	return (-1);
 }
