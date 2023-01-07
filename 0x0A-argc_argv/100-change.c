@@ -3,16 +3,16 @@
 
 /**
  * main - prints coins left
- * @args: Parameter Entry
+ * @argc: Parameter Entry
  * @argv: One number of arguments
- * Return: zero onOne number of arguments
+ * Return: zero on One number of arguments
  */
 
-int main(int args, char *argv[])
+int main(int argc, char *argv[])
 {
 	int c, coins = 0;
 
-	if (args != 2)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
