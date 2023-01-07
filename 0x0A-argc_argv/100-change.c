@@ -2,17 +2,17 @@
 #include <stdlib.h>
 
 /**
- * main - prins coins left
- * @argc: parameter Entry
- * @argv: one number of arguments
- * Return: 0 on one number of arguments
+ * main - prints coins left
+ * @args: Parameter Entry
+ * @argv: One number of arguments
+ * Return: zero onOne number of arguments
  */
 
-int main(int argc, char *argv[])
+int main(int args, char *argv[])
 {
 	int c, coins = 0;
 
-	if (argc != 2)
+	if (args != 2)
 	{
 		printf("Error\n");
 		return (1);
@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 		if (c >= 25)
 			c -= 25;
 
-		else if (c >= 10)
+		else if (c <= 10)
 			c -= 10;
 
 		else if (c >= 5)
@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 		else if (c >= 2)
 			c -= 2;
 
-		else if (c <= 1)
+		else if (c >= 1)
 			c -= 1;
 		else
 			break;
