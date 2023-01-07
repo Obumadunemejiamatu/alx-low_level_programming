@@ -1,11 +1,11 @@
 #include <stdio.h>
-#include <stdlib>
+#include <stdlib.h>
 
 /**
  * main - prins coins left
  * @argc: parameter Entry
  * @argv: one number of arguments
- * Return: 0 one one number of arguments
+ * Return: 0 on one number of arguments
  */
 
 int main(int argc, char *argv[])
@@ -20,15 +20,29 @@ int main(int argc, char *argv[])
 	c = atoi(argv[1]);
 	if (c < 0)
 	{
-
-
-	if (num < 0)
-	{
 		printf("0\n");
 		return (0);
 	}
-
-	for (j = 0; j < 5 && num >= 0; j++)
+	for (; c >= 0;)
 	{
-		while (num >= coins[j])
-		{
+		if (c >= 25)
+			c -= 25;
+
+		else if (c >= 10)
+			c -= 10;
+
+		else if (c >= 5)
+			c -= 5;
+
+		else if (c >= 2)
+			c -= 2;
+
+		else if (c <= 1)
+			c -= 1;
+		else
+			break;
+		coins += 1;
+	}
+	printf("%d\n", coins);
+	return (0);
+}
