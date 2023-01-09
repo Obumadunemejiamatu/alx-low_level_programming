@@ -12,7 +12,7 @@ int _strlen(char *s)
 	i = 0;
 	while (s[i] != '\0') /*count character of string*/
 	{
-		i++
+		i++;
 	}
 
 	return (i);
@@ -55,7 +55,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	size = _strlen(str) + 1);
+	size = _strlen(str) + 1;
 
 	dst = (char *) malloc(size *sizeof(char));
 
@@ -64,5 +64,5 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 	_strcpy(dst, str);
-	return (dest);
+	return (dst);
 }
