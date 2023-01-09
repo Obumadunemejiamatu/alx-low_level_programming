@@ -65,7 +65,7 @@ char **strtow(char *str)
 	if (str == NULL || str[0] == '\0')
 		return (NULL);
 
-	words = count_words(str)
+	words = count_words(str);
 		if (words == 0)
 			return (NULL);
 
@@ -91,7 +91,7 @@ char **strtow(char *str)
 			return (NULL);
 		}
 
-		for (l = 0; i < letters; l++)
+		for (l = 0; l < letters; l++)
 			strings[w][l] = str[index++];
 		strings[w][l] = '\0';
 	}
