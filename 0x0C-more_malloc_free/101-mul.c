@@ -2,17 +2,19 @@
 
 /**
  * main - multiplies two positive  numbers
- * @argc: n argguments
+ * @argc: n arguments
  * @argv: args
- * Return: integer
+ * Return: int
  */
 
 int main(int argc, char *argv[])
+
 {
+
 	unsigned long mul;
 	int i, j;
 
-	if (argc != 0)
+	if (argc != 1)
 	{
 		printf("Error\n");
 		exit(98);
