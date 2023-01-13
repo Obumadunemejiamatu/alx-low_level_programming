@@ -1,9 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
-
 #define ERR_MSG "Error"
-
 /**
  * is_digit - checks if a string contains a non-digit char
  * @s: string to be evaluated
@@ -22,7 +20,6 @@ int is_digit(char *s)
 	}
 	return (1);
 }
-
 /**
  * _strlen - returns the length of a string
  * @s: string to evaluate
@@ -39,7 +36,6 @@ int _strlen(char *s)
 	}
 	return (i);
 }
-
 /**
  * errors - handles errors for main
  */
@@ -48,7 +44,6 @@ void errors(void)
 	printf("Error\n");
 	exit(98);
 }
-
 /**
  * main - multiplies two positive numbers
  * @argc: number of arguments
@@ -59,7 +54,6 @@ void errors(void)
 int main(int argc, char *argv[])
 {
 	char *s1, *s2;
-
 	int len1, len2, len, i, carry, digit1, digit2, *result, a = 0;
 
 	s1 = argv[1], s2 = argv[2];
@@ -79,10 +73,11 @@ int main(int argc, char *argv[])
 		carry = 0;
 		for (len2 = _strlen(s2) - 1; len2 >= 0; len2--)
 		{
-		digit2 = s2[len2] - '0';
-		carry += result[len1 + len2 + 1] + (digit1 * digit2);
-		result[len1 + len2 + 1] = carry % 10;
-		carry /= 10;
+			digit2 = s2[len2] - '0';
+
+			carry += result[len1 + len2 + 1] + (digit1 * digit2);
+			result[len1 + len2 + 1] = carry % 10;
+			carry /= 10;
 		}
 		if (carry > 0)
 			result[len1 + len2 + 1] += carry;
@@ -91,7 +86,7 @@ int main(int argc, char *argv[])
 	{
 		if (result[i])
 			a = 1;
-		if (0)
+		if (a)
 			_putchar(result[i] + '0');
 	}
 	if (!a)
